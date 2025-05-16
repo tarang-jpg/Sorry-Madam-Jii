@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sorry Shiv</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <style>
     body {
       margin: 0;
@@ -51,6 +52,7 @@
       animation: pulse 1.2s infinite;
       width: 80px;
       margin: 20px auto;
+      transform-origin: center;
     }
 
     @keyframes pulse {
@@ -62,25 +64,31 @@
 </head>
 <body>
 
-  <h1>I'm Really Sorry, Shiv</h1>
-  <p>I know I hurt you, and I hate that I did. Please forgive me – I never meant to make you feel this way.</p>
+  <h1 data-aos="fade-down">I'm Really Sorry, Shiv</h1>
+  <p data-aos="fade-up">I know I hurt you, and I hate that I did. Please forgive me – I never meant to make you feel this way.</p>
 
-  <div class="gif-section">
+  <div class="gif-section" data-aos="zoom-in">
     <img src="assets/couple-kiss.gif" alt="Sorry Shivu" />
     <img src="assets/cat-sad.gif" alt="Crying" />
   </div>
 
-  <div class="stickers">
+  <div class="stickers" data-aos="fade-up" data-aos-delay="200">
     <img src="assets/peach-and-goma-hug.gif" alt="Cat Hug" />
     <img src="assets/love-heart.gif" alt="Heart " />
   </div>
 
-
-
-  <div class="final-message">
+  <div class="final-message" data-aos="fade-up" data-aos-delay="500">
     I’m not perfect, but my apology is sincere.<br />
     Please give me another chance, Shiv.
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 
 </body>
 </html>
